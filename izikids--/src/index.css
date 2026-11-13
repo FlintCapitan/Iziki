@@ -1,0 +1,49 @@
+:root {
+  --bg-color: #faf7f2; /* Мягкий кремовый фон */
+  --blue: #76c1e8;
+  --pink: #f297b7;
+  --yellow: #fce17a;
+  --green: #a2d974;
+  --dark: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+/* Базовые стили для органических форм (Blobs) */
+.blob {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+  filter: blur(2px);
+}
+
+.shape-1 {
+  background-color: var(--blue);
+  border-radius: 56% 44% 31% 69% / 42% 39% 61% 58%;
+}
+
+.shape-2 {
+  background-color: var(--pink);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.shape-3 {
+  background-color: var(--yellow);
+  border-radius: 64% 36% 47% 53% / 43% 54% 46% 57%;
+}

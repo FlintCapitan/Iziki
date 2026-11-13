@@ -1,0 +1,203 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--blue);
+}
+
+/* Header */
+.header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--pink);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--blue);
+}
+
+.hero-img-wrapper {
+  margin-top: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+/* Features */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.feature-item {
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+/* Contact */
+.contact-section {
+  background-color: var(--blue);
+  border-radius: 60px;
+  padding: 60px;
+  text-align: center;
+  color: white;
+  margin: 40px 20px;
+}
+
+.contact-form {
+  display: flex;
+  gap: 15px;
+  max-width: 600px;
+  margin: 30px auto 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-form input {
+  padding: 15px 25px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  flex: 1;
+  min-width: 200px;
+}
+
+.btn {
+  background-color: var(--pink);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #d87498;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  color: #888;
+}
+
+/* Contact */
+.contact-section {
+  background-color: var(--blue);
+  border-radius: 60px;
+  padding: 60px 20px; /* Уменьшил боковые отступы для мобилок */
+  text-align: center;
+  color: white;
+  margin: 40px 20px;
+}
+
+/* Контейнер для кнопок */
+.contact-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+/* Общие стили для кнопок мессенджеров */
+.btn-messenger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: white;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для Telegram */
+.btn-telegram {
+  background-color: #229ed9; /* Официальный цвет Telegram */
+}
+
+.btn-telegram:hover {
+  background-color: #1c86b8;
+  box-shadow: 0 15px 25px rgba(34, 158, 217, 0.4);
+}
+
+/* Стили для MAX (используем градиент для привлекательности) */
+.btn-max {
+  background: linear-gradient(135deg, #8a2be2, #ff1493);
+}
+
+.btn-max:hover {
+  background: linear-gradient(135deg, #7a1bd2, #e01083);
+  box-shadow: 0 15px 25px rgba(138, 43, 226, 0.4);
+}
